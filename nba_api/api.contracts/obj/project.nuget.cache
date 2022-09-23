@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ySY1ufPd2iPaWeNzWhVJr7pd3bGy3EsXGRTHVP6VUuhMv5jSBoVtrwOJ+ZxHjjvhP+HcsqEtz3dZuDhQwkeJjQ==",
+  "success": true,
+  "projectFilePath": "/home/frncm/projects/frncm/nbaProject/nba_api/api.contracts/api.contracts.csproj",
+  "expectedPackageFiles": [
+    "/home/frncm/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.9/microsoft.aspnetcore.app.ref.6.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
