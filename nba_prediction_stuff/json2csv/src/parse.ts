@@ -1,10 +1,9 @@
 import { createArrayCsvWriter } from "csv-writer";
-import { data } from "./data/2020-2021_data";
+import { Data } from "./data/data";
 import { existsSync, mkdirSync } from "fs";
+const data = new Data();
+const dataArr = [data.year1, data.year2, data.year3];
 
-const writer = createArrayCsvWriter({
-    path: "./output/outputData_2020-2021.csv",
-})
 
 if(existsSync("./output"))
 {
@@ -26,5 +25,11 @@ else
 
 function runWriter() 
 {
-    writer.writeRecords(data);
+
+    dataArr.forEach((item, idx)=> {
+    const writer = createArrayCsvWriter({
+        path: `./output/outputData_${idx}.csv`,
+    })
+        writer.writeRecords(item);
+    })
 }

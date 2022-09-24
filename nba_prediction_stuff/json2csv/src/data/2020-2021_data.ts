@@ -1,4 +1,4 @@
-export const data = [
+export const data2 = [
     [
         203932,
         "Aaron Gordon",
